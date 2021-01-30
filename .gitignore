@@ -10,3 +10,4 @@ fmod_editor.log
 /FMOD_GlobalGameJam2021/**.cache
 /FMOD_GlobalGameJam2021/**.restore
 
+*.bank
