@@ -23,6 +23,9 @@ public class PlayerMain : MonoBehaviour
             TakeBreath();
         }
 
+        var emitter = GetComponent<FMODUnity.StudioEventEmitter>();
+        emitter.SetParameter("Oxygen", Oxygen);
+
     }
 
     private void TakeBreath()

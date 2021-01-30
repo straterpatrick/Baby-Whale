@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 80831628}
   - component: {fileID: 80831627}
   - component: {fileID: 80831629}
+  - component: {fileID: 80831630}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -439,6 +440,31 @@ MonoBehaviour:
   Distraction1: {fileID: 752846357904974298, guid: 10ccd07f79563e646870d62a601374a6, type: 3}
   Distraction2: {fileID: 4947605383835782196, guid: a74e3bba25905d949b3875e211c721bd, type: 3}
   SpawnDistance: 200
+--- !u!114 &80831630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80831619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambience/Ambience
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: Oxygen
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &266537463
 GameObject:
   m_ObjectHideFlags: 0
