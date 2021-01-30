@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 787a49b36179eed439b3771c373db43d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 50
+  Speed: 45
   Noticedistance: 30
   StartleDistance: 200
 --- !u!135 &-2238349076522855001

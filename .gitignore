@@ -12,3 +12,5 @@ fmod_editor.log
 /FMOD_GlobalGameJam2021/**.restore
 
 *.bank
+FMOD_GlobalGameJam2021/Build/Desktop/Master.bank
+FMOD_GlobalGameJam2021/Build/Desktop/Master.strings.bank
