@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{adb1f8a6-cb8f-4517-b301-f3354fec5e2f}">
+		<property name="assetPath">
+			<value>Enemy Sighted2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>8</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0a8a9866-b27a-4ba3-bd3a-483d0fbb162b}</destination>
+		</relationship>
+	</object>
+</objects>

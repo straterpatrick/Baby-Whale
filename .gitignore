@@ -1,0 +1,12 @@
+# FMOD
+/Assets/FMODStudioCache.asset
+/Assets/FMODStudioCache.asset.meta
+fmod.log
+fmod_editor.log
+
+# FMOD studio (In folder FMOD)
+/FMOD_GlobalGameJam2021/**.user
+/FMOD_GlobalGameJam2021/**.unsaved
+/FMOD_GlobalGameJam2021/**.cache
+/FMOD_GlobalGameJam2021/**.restore
+

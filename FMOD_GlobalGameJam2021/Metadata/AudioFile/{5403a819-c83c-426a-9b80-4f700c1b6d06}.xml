@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{5403a819-c83c-426a-9b80-4f700c1b6d06}">
+		<property name="assetPath">
+			<value>Blowhole5.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0a8a9866-b27a-4ba3-bd3a-483d0fbb162b}</destination>
+		</relationship>
+	</object>
+</objects>
