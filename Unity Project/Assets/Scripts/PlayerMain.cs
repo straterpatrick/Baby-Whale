@@ -18,7 +18,11 @@ public class PlayerMain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (transform.position.y >= 45)
+        {
+            TakeBreath();
+        }
+
     }
 
     private void TakeBreath()

@@ -59,6 +59,31 @@ public class PlayerControl : MonoBehaviour
     }
     void UpdatePlayerMovement()
     {
-        transform.Translate(smoothInputMovement);
+        if (transform.position.y >= 45)
+        {
+            if (smoothInputMovement.y > 0)
+            {
+                transform.Translate(smoothInputMovement.x, 0, smoothInputMovement.z);
+            }
+            else
+            {
+                transform.Translate(smoothInputMovement.x, smoothInputMovement.y, smoothInputMovement.z);
+            }
+        }
+        else if (transform.position.y < -200)
+        {
+            if (smoothInputMovement.y < 0)
+            {
+                transform.Translate(smoothInputMovement.x, 0, smoothInputMovement.z);
+            }
+            else
+            {
+                transform.Translate(smoothInputMovement.x, smoothInputMovement.y, smoothInputMovement.z);
+            }
+        }
+        else
+        {
+            transform.Translate(smoothInputMovement);
+        }
     }
 }
