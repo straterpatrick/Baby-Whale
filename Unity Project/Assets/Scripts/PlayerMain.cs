@@ -23,7 +23,7 @@ public class PlayerMain : MonoBehaviour
 
         if (transform.position.y > 26)
         {
-            AtSurface = Mathf.Min((transform.position.y - 26) / 15, 1);
+            AtSurface = Mathf.Min((transform.position.y - 26) / 19, 1);
         }
         else
         {
