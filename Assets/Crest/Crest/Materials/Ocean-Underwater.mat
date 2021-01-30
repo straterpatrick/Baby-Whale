@@ -127,6 +127,7 @@ Material:
     - _PlanarReflectionNormalsStrength: 1
     - _PlanarReflections: 0
     - _ProceduralSky: 0
+    - _Projection: 0
     - _RefractAmt: 0
     - _RefractionStrength: 1
     - _RefractiveIndexOfAir: 1.2
@@ -182,3 +183,4 @@ Material:
     - _SubSurfaceShallowCol: {r: 0.552, g: 1, b: 1, a: 1}
     - _SubSurfaceShallowColShadow: {r: 0.14417942, g: 0.2264151, b: 0.21173015, a: 1}
     - _SubSurfaceShallowColour: {r: 0.41999996, g: 0.75, b: 0.69, a: 1}
+  m_BuildTextureStacks: []
