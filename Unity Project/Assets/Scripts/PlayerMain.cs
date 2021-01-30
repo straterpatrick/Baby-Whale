@@ -21,15 +21,16 @@ public class PlayerMain : MonoBehaviour
         
         float AtSurface;
 
-        if (transform.position.y > 30)
+        if (transform.position.y > 26)
         {
-            AtSurface = (transform.position.y - 30) / 15;
-            Debug.Log(AtSurface);
+            AtSurface = Mathf.Min((transform.position.y - 26) / 15, 1);
         }
         else
         {
             AtSurface = 0;
         }
+        
+        Debug.Log(AtSurface);
 
         if (transform.position.y >= 45)
         {
