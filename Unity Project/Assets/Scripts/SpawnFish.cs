@@ -6,7 +6,7 @@ public class SpawnFish : MonoBehaviour
 {
 
     public GameObject SpawnedFish;
-    public float RespawnTimer = 1f;
+    public float RespawnTimer = 0.1f;
     public int MaxFish = 20;
     private int School = 0;
     // Start is called before the first frame update
@@ -23,12 +23,12 @@ public class SpawnFish : MonoBehaviour
 
     private void NewFish()
     {
-        var player = GameObject.FindGameObjectWithTag("Player");
         GameObject fish = Instantiate(SpawnedFish);
         School++;
+        var player = GameObject.FindGameObjectWithTag("Player");
         Vector3 pp = player.transform.position;
         fish.transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
-        fish.transform.position = new Vector3(Random.Range(pp.x + 100, pp.x - 100), Random.Range(pp.y + 50, pp.y - 50), pp.z + 100);
+        fish.transform.position = new Vector3(Random.Range(pp.x + 100, pp.x - 100), Random.Range(pp.y + 50, pp.y - 50), Random.Range(pp.z + 120, pp.z + 100));
     }
 
     public void RemoveFish()
