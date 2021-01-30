@@ -18,13 +18,28 @@ public class PlayerMain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        float AtSurface;
+
+        if (transform.position.y > 30)
+        {
+            AtSurface = (transform.position.y - 30) / 15;
+            Debug.Log(AtSurface);
+        }
+        else
+        {
+            AtSurface = 0;
+        }
+
         if (transform.position.y >= 45)
         {
             TakeBreath();
         }
 
+
         var emitter = GetComponent<FMODUnity.StudioEventEmitter>();
         emitter.SetParameter("Oxygen", Oxygen);
+        emitter.SetParameter("AmbienceChange", AtSurface);
 
     }
 
