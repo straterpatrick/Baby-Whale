@@ -106,7 +106,7 @@
 			<value>-7.5</value>
 		</property>
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Swim</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{c96fbc98-1621-4fbf-87e8-69bed45c54ae}</destination>
