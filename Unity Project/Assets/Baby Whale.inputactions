@@ -36,6 +36,14 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Exit Game",
+                    "type": "Button",
+                    "id": "893e94eb-f5b9-442b-be6f-65636e1c25ce",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -313,6 +321,17 @@
                     "action": "Dive",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "f6143387-5737-46b3-9d9d-301b244fde52",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
+                    "action": "Exit Game",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

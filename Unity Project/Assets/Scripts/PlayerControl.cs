@@ -53,6 +53,11 @@ public class PlayerControl : MonoBehaviour
         rawInputMovement = new Vector3(0, inputMovement.y, 0);
     }
 
+    public void OnExit(InputAction.CallbackContext context)
+    {
+        Application.Quit();
+    }
+
     void CalculateMovementInputSmoothing()
     {
         smoothInputMovement = Vector3.Lerp(smoothInputMovement, rawInputMovement, Time.deltaTime * movementSmoothingSpeed);

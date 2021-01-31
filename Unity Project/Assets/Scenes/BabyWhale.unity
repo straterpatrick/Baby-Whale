@@ -161,6 +161,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
+  - {fileID: 1659875361}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -293,6 +294,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 15785596-4009-4081-b8fc-d18d29535f75
     m_ActionName: Player/Dive[/Mouse/scroll/y,/Mouse/scroll/y]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 80831625}
+        m_TargetAssemblyTypeName: PlayerControl, Assembly-CSharp
+        m_MethodName: OnExit
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 893e94eb-f5b9-442b-be6f-65636e1c25ce
+    m_ActionName: Player/Exit Game[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -421,7 +438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnedFish: {fileID: 8475201989123649992, guid: a0368514f3fb2a54a9e79d8f2d2ee112, type: 3}
-  RespawnTimer: 1
+  SpawnedFish2: {fileID: 2851545909946559767, guid: d243b0c5484083e439edda135c2923fb, type: 3}
+  RespawnTimer: 0.1
   MaxFish: 30
 --- !u!114 &80831629
 MonoBehaviour:
@@ -438,8 +456,8 @@ MonoBehaviour:
   GoalFish: {fileID: 573159855269658644, guid: bc73ff9f9d5942d4999921d6e40f00ca, type: 3}
   EnemyFish: {fileID: 8932624715917424489, guid: 4b22bae663b68a846b818e44de8656a2, type: 3}
   Distraction1: {fileID: 752846357904974298, guid: 10ccd07f79563e646870d62a601374a6, type: 3}
-  Distraction2: {fileID: 4947605383835782196, guid: a74e3bba25905d949b3875e211c721bd, type: 3}
-  SpawnDistance: 200
+  Distraction2: {fileID: 5725605037576414611, guid: a74e3bba25905d949b3875e211c721bd, type: 3}
+  SpawnDistance: 50
 --- !u!114 &80831630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,13 +472,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/Ambience/Ambience
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 1
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params:
   - Name: Oxygen
+    Value: 0
+  - Name: AmbienceChange
     Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 0
@@ -1621,6 +1641,73 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1659875360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1659875361}
+  - component: {fileID: 1659875363}
+  - component: {fileID: 1659875362}
+  m_Layer: 0
+  m_Name: BlowHole
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1659875361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659875360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 80831620}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1659875362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659875360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8909b5497a41e44b51e88a51eab73e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1659875363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659875360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/BabyWhale/Blowhole
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1765357256
 GameObject:
   m_ObjectHideFlags: 0

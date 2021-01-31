@@ -25,7 +25,7 @@ public class SpawnGoal : MonoBehaviour
         goal.transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
 
         Vector3[] poslist = new Vector3[4];
-        poslist[0] = new Vector3(pp.x + SpawnDistance, pp.y - 8, pp.z + SpawnDistance); //Random.Range(pp.y + 10, pp.y - 10)
+        poslist[0] = new Vector3(pp.x + SpawnDistance, pp.y - 8, pp.z + SpawnDistance); //Random.Range(pp.y - 8, pp.y - 20)
         poslist[1] = new Vector3(pp.x + SpawnDistance, pp.y - 8, pp.z - SpawnDistance);
         poslist[2] = new Vector3(pp.x - SpawnDistance, pp.y - 8, pp.z + SpawnDistance);
         poslist[3] = new Vector3(pp.x - SpawnDistance, pp.y - 8, pp.z - SpawnDistance);
