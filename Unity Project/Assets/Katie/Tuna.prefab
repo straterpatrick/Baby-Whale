@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: event:/SFX/Bubbles
+  Event: event:/SFX/Tuna_Swim
   PlayEvent: 3
   StopEvent: 2
   AllowFadeout: 1
