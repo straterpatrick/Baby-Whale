@@ -19,6 +19,6 @@ public class GameUI : MonoBehaviour
     void Update()
     {
         Oxy.text = player.GetComponent<PlayerMain>().Oxygen.ToString();
-        Depth.text = player.transform.position.y.ToString("0");
+        Depth.text = "" + Mathf.RoundToInt(45 - player.transform.position.y);
     }
 }

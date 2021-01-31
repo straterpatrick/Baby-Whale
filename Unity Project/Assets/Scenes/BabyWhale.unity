@@ -162,6 +162,7 @@ Transform:
   m_Children:
   - {fileID: 963194228}
   - {fileID: 1659875361}
+  - {fileID: 1601674877}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -457,7 +458,7 @@ MonoBehaviour:
   EnemyFish: {fileID: 8932624715917424489, guid: 4b22bae663b68a846b818e44de8656a2, type: 3}
   Distraction1: {fileID: 752846357904974298, guid: 10ccd07f79563e646870d62a601374a6, type: 3}
   Distraction2: {fileID: 5725605037576414611, guid: a74e3bba25905d949b3875e211c721bd, type: 3}
-  SpawnDistance: 50
+  SpawnDistance: 200
 --- !u!114 &80831630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,8 +520,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 261, y: -106}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 287.9617, y: -137.12}
+  m_SizeDelta: {x: 213.9234, y: 92.237}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &266537466
 MonoBehaviour:
@@ -544,10 +545,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1169,7 +1170,7 @@ MonoBehaviour:
   _spectrum: {fileID: 417864956}
   _windDirectionAngle: 0
   _componentsPerOctave: 8
-  _weight: 0.45
+  _weight: 0.27
   _randomSeed: 0
   _evaluateSpectrumAtRuntime: 1
   _wavelengths:
@@ -1286,118 +1287,118 @@ MonoBehaviour:
   - 916.6448
   - 992.9045
   _amplitudes:
-  - 0.00008220711
-  - 0.00046045834
-  - 0.00059224706
-  - 0.00039214676
-  - 0.0006246003
-  - 0.00050568965
-  - 0.0003591346
-  - 0.0004074876
-  - 0.00033621662
-  - 0.00019825147
-  - 0.00029106624
-  - 0.0005643507
-  - 0.0003461549
-  - 0.00054004934
-  - 0.00016930421
-  - 0.00035914738
-  - 0.0002411924
-  - 0.00012571014
-  - 0.0007968417
-  - 0.00025886358
-  - 0.0012258416
-  - 0.0013802041
-  - 0.0022430026
-  - 0.003072659
-  - 0.002916348
-  - 0.003375126
-  - 0.00056986365
-  - 0.002858129
-  - 0.005913695
-  - 0.0014140545
-  - 0.002406513
-  - 0.00021785898
-  - 0.0009621436
-  - 0.00419778
-  - 0.008192125
-  - 0.0018616687
-  - 0.0029328943
-  - 0.0033361826
-  - 0.0036080997
-  - 0.01094269
-  - 0.012796297
-  - 0.005195831
-  - 0.013105939
-  - 0.013237247
-  - 0.007467811
-  - 0.004686144
-  - 0.0071641803
-  - 0.0018989411
-  - 0.0041325274
-  - 0.01640084
-  - 0.0058827214
-  - 0.013208317
-  - 0.028469948
-  - 0.016076863
-  - 0.021478292
-  - 0.02373183
-  - 0.049482346
-  - 0.04783104
-  - 0.041109983
-  - 0.043141127
-  - 0.075416654
-  - 0.04459915
-  - 0.07165696
-  - 0.01909623
-  - 0.008567331
-  - 0.08990756
-  - 0.0059393444
-  - 0.055261187
-  - 0.07950668
-  - 0.13669147
-  - 0.006549779
-  - 0.040247582
-  - 0.073062
-  - 0.1815099
-  - 0.08078847
-  - 0.22411191
-  - 0.10690706
-  - 0.112503506
-  - 0.2377683
-  - 0.061798565
-  - 0.11987987
-  - 0.018643484
-  - 0.24302472
-  - 0.15409262
-  - 0.10071139
-  - 0.2932192
-  - 0.07953732
-  - 0.053587086
-  - 0.010276338
-  - 0.0042537404
-  - 0.23659602
-  - 0.35352784
-  - 0.107180275
-  - 0.40371493
-  - 0.18820654
-  - 0.088089034
-  - 0.3266781
-  - 0.038231958
-  - 0.0023517422
-  - 0.011798711
-  - 0.0015210897
-  - 0.0006498078
-  - 0.00019303295
-  - 0.000035670484
-  - 0.000028832059
-  - 0.000051711504
-  - 0.000045068136
-  - 0.0000211462
-  - 0.000014830913
-  - 0.00005039118
-  - 0.000034387034
-  - 0.000033376647
+  - 0.00004932427
+  - 0.000276275
+  - 0.00035534825
+  - 0.00023528808
+  - 0.00037476022
+  - 0.0003034138
+  - 0.00021548077
+  - 0.00024449258
+  - 0.00020172998
+  - 0.000118950884
+  - 0.00017463976
+  - 0.00033861044
+  - 0.00020769297
+  - 0.00032402962
+  - 0.00010158254
+  - 0.00021548844
+  - 0.00014471545
+  - 0.00007542609
+  - 0.00047810507
+  - 0.00015531816
+  - 0.000735505
+  - 0.00082812255
+  - 0.0013458016
+  - 0.0018435955
+  - 0.0017498089
+  - 0.0020250757
+  - 0.00034191823
+  - 0.0017148776
+  - 0.0035482172
+  - 0.00084843277
+  - 0.001443908
+  - 0.00013071539
+  - 0.0005772862
+  - 0.0025186683
+  - 0.004915275
+  - 0.0011170013
+  - 0.0017597367
+  - 0.0020017095
+  - 0.00216486
+  - 0.006565614
+  - 0.007677778
+  - 0.0031174987
+  - 0.007863564
+  - 0.007942349
+  - 0.004480687
+  - 0.0028116866
+  - 0.0042985086
+  - 0.0011393647
+  - 0.0024795164
+  - 0.009840505
+  - 0.0035296332
+  - 0.007924991
+  - 0.01708197
+  - 0.009646118
+  - 0.012886976
+  - 0.014239098
+  - 0.029689409
+  - 0.028698627
+  - 0.02466599
+  - 0.025884677
+  - 0.045249995
+  - 0.02675949
+  - 0.04299418
+  - 0.011457738
+  - 0.005140399
+  - 0.05394454
+  - 0.0035636069
+  - 0.033156715
+  - 0.04770401
+  - 0.08201489
+  - 0.0039298674
+  - 0.02414855
+  - 0.043837205
+  - 0.10890595
+  - 0.048473086
+  - 0.13446715
+  - 0.06414424
+  - 0.06750211
+  - 0.14266099
+  - 0.037079144
+  - 0.07192793
+  - 0.01118609
+  - 0.14581485
+  - 0.09245558
+  - 0.06042684
+  - 0.17593154
+  - 0.047722396
+  - 0.032152254
+  - 0.0061658034
+  - 0.0025522443
+  - 0.14195763
+  - 0.21211672
+  - 0.06430817
+  - 0.24222896
+  - 0.11292393
+  - 0.052853424
+  - 0.19600688
+  - 0.022939177
+  - 0.0014110454
+  - 0.007079227
+  - 0.00091265386
+  - 0.00038988472
+  - 0.00011581977
+  - 0.000021402293
+  - 0.000017299237
+  - 0.000031026906
+  - 0.000027040884
+  - 0.000012687721
+  - 0.000008898549
+  - 0.000030234709
+  - 0.000020632222
+  - 0.00002002599
   _angleDegs:
   - -76.85815
   - -50.253593
@@ -1641,6 +1642,77 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1601674876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1601674877}
+  - component: {fileID: 1601674878}
+  - component: {fileID: 1601674879}
+  m_Layer: 0
+  m_Name: BackgroundMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1601674877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601674876}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 80831620}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1601674878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601674876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Music/Score
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: Oxygen
+    Value: 100
+  - Name: Danger
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1601674879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601674876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c1165685c7556848a1f25e62d4c9eff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1659875360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,10 +1769,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
+  CollisionTag: Untagged
   Event: event:/BabyWhale/Blowhole
-  PlayEvent: 1
-  StopEvent: 2
+  PlayEvent: 3
+  StopEvent: 4
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -1841,10 +1913,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 2
     m_AlignByGeometry: 0
@@ -1877,8 +1949,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -293, y: -110}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -252.01819, y: -139.11865}
+  m_SizeDelta: {x: 241.9636, y: 88.2373}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1874707854 stripped
 Transform:
