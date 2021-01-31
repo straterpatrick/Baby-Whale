@@ -30,13 +30,10 @@ public class PlayerMain : MonoBehaviour
             AtSurface = 0;
         }
         
-        Debug.Log(AtSurface);
-
         if (transform.position.y >= 45)
         {
             TakeBreath();
         }
-
 
         var emitter = GetComponent<FMODUnity.StudioEventEmitter>();
         emitter.SetParameter("Oxygen", Oxygen);

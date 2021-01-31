@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 45
-  Noticedistance: 30
+  Noticedistance: 25
   StartleDistance: 200
 --- !u!135 &-2238349076522855001
 SphereCollider:

@@ -44,7 +44,14 @@ public class PlayerControl : MonoBehaviour
     }
     public void OnFire(InputAction.CallbackContext context)
     {
-        // Echolocate?
+        FMODUnity.RuntimeManager.PlayOneShot("event:/BabyWhale/Whale_Whine");
+        
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Goal");
+        foreach (GameObject target in enemies)
+        {
+            target.GetComponent<GoalMain>().AnswerCall();
+        }
+
     }
 
     public void OnDive(InputAction.CallbackContext context)

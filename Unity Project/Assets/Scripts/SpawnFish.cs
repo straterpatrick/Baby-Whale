@@ -8,7 +8,7 @@ public class SpawnFish : MonoBehaviour
     public GameObject SpawnedFish;
     public GameObject SpawnedFish2;
     public float RespawnTimer = 0.1f;
-    public int MaxFish = 30;
+    public int MaxFish = 50;
     private int School = 0;
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class SpawnFish : MonoBehaviour
     {
         GameObject fish;
 
-        if (School % 3 < 1)
+        if (School % 5 < 1)
         {
             fish = Instantiate(SpawnedFish);
         } else

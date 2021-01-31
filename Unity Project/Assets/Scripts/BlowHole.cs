@@ -4,26 +4,22 @@ using UnityEngine;
 
 public class BlowHole : MonoBehaviour
 {
-    private int Oxygen = 0;
+
+    private float previousPosition = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(transform.position.y >= 45)
+        if(transform.position.y >= 45 && previousPosition < transform.position.y)
         {
-            Oxygen = 1;
-        } else
-        {
-            Oxygen = 0;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/BabyWhale/Blowhole");
         }
-        var emitter = GetComponent<FMODUnity.StudioEventEmitter>();
-        emitter.SetParameter("Oxygen", Oxygen);
-
+        previousPosition = transform.position.y;
     }
 }
