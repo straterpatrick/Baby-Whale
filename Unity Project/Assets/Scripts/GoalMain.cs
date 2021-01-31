@@ -20,13 +20,12 @@ public class GoalMain : MonoBehaviour
 
     public void AnswerCall()
     {
-        StartCoroutine(Call()); Debug.Log("Answer");
+        StartCoroutine(Call());
     }
 
     IEnumerator Call()
     {
         yield return new WaitForSeconds(4f);
-        Debug.Log("Answer");
         FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PodWhine");
     }
 }
