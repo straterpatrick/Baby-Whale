@@ -104,7 +104,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{6bad6827-27b5-4fa4-98c7-2d1ab7180037}">
 		<property name="volume">
-			<value>-15.5</value>
+			<value>-8</value>
 		</property>
 		<property name="name">
 			<value>PodCall</value>
