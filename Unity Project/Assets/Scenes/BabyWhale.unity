@@ -460,7 +460,7 @@ MonoBehaviour:
   EnemyFish: {fileID: 8932624715917424489, guid: 4b22bae663b68a846b818e44de8656a2, type: 3}
   Distraction1: {fileID: 752846357904974298, guid: 10ccd07f79563e646870d62a601374a6, type: 3}
   Distraction2: {fileID: 5725605037576414611, guid: a74e3bba25905d949b3875e211c721bd, type: 3}
-  SpawnDistance: 100
+  SpawnDistance: 150
 --- !u!114 &80831630
 MonoBehaviour:
   m_ObjectHideFlags: 0
