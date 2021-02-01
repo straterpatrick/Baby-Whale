@@ -10,6 +10,7 @@ public class PlayerControl : MonoBehaviour
     public float movementSmoothingSpeed = 1f;
     private Vector3 rawInputMovement;
     private Vector3 smoothInputMovement;
+    public Rigidbody body;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +41,7 @@ public class PlayerControl : MonoBehaviour
     public void OnLook(InputAction.CallbackContext context)
     {
         var value = context.ReadValue<Vector2>();
-        transform.Rotate(0, value.x * lookSensitivity * Time.deltaTime, 0);
+        body.transform.Rotate(0, value.x * lookSensitivity * Time.deltaTime, 0);
     }
     public void OnFire(InputAction.CallbackContext context)
     {
@@ -75,27 +76,28 @@ public class PlayerControl : MonoBehaviour
         {
             if (smoothInputMovement.y > 0)
             {
-                transform.Translate(smoothInputMovement.x, 0, smoothInputMovement.z);
+                body.transform.Translate(smoothInputMovement.x, 0, smoothInputMovement.z);
             }
             else
             {
-                transform.Translate(smoothInputMovement.x, smoothInputMovement.y, smoothInputMovement.z);
+                body.transform.Translate(smoothInputMovement.x, smoothInputMovement.y, smoothInputMovement.z);
             }
         }
         else if (transform.position.y < -200)
         {
             if (smoothInputMovement.y < 0)
             {
-                transform.Translate(smoothInputMovement.x, 0, smoothInputMovement.z);
+                body.transform.Translate(smoothInputMovement.x, 0, smoothInputMovement.z);
             }
             else
             {
-                transform.Translate(smoothInputMovement.x, smoothInputMovement.y, smoothInputMovement.z);
+                body.transform.Translate(smoothInputMovement.x, smoothInputMovement.y, smoothInputMovement.z);
             }
         }
         else
         {
-            transform.Translate(smoothInputMovement);
+            //body.MovePosition(smoothInputMovement);
+            body.transform.Translate(smoothInputMovement);
         }
     }
 }

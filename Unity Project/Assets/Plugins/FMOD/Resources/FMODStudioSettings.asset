@@ -162,7 +162,7 @@ MonoBehaviour:
       Value: Desktop
       HasValue: 1
     SpeakerMode:
-      Value: 3
+      Value: 6
       HasValue: 1
     VirtualChannelCount:
       Value: 128
@@ -508,8 +508,8 @@ MonoBehaviour:
       Value: 1
       HasValue: 1
     LiveUpdatePort:
-      Value: 0
-      HasValue: 0
+      Value: 9264
+      HasValue: 1
     Overlay:
       Value: 1
       HasValue: 1
